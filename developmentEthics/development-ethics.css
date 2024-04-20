@@ -1,0 +1,23 @@
+#title{
+
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: blue;
+    background-image: url(techBackgroundImage.jpg);
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 36px;
+}
+
+#header{
+
+    background-color: green;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 36px;
+}
+
+h1{
+
+    color:white;
+ }
