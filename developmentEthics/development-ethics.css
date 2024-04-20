@@ -2,19 +2,28 @@
 
     padding-top: 50px;
     padding-bottom: 20px;
-    background-color: blue;
     background-image: url(techBackgroundImage.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
     text-align: center;
     font-family: "Open Sans";
     font-size: 36px;
+    margin-bottom: 5%;
 }
 
 #header{
 
-    background-color: green;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-image: url(HoldingGlobe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
     font-family: "Open Sans";
     font-size: 36px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
 }
 
 h1{
