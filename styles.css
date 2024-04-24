@@ -1,130 +1,101 @@
 * {
   margin: 0;
-
   padding: 0;
-
   box-sizing: border-box;
 }
 
 body,
 html {
   height: 100%;
-
   font-family: Arial, sans-serif;
 }
 
 header {
-  background: rgba(255, 255, 255, 0.5);
-
+  background: white;
   text-align: right;
-
   position: fixed;
-
   width: 100%;
-
   z-index: 1000;
 }
 
-.nav-links li:hover .sub-menu {
-  display: block;
+.sub-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: white;
+  padding: 0px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+
+.sub-menu .tab {
+  padding: 15px;
+  text-align: left;
+}
+
+.sub-menu .tab:hover {
+  background-color: #2aadf8;
+  color: white;
+}
+
+.nav-header:hover {
+  text-decoration-line:underline;
+  color: #2aadf8;
 }
 
 nav ul {
   list-style-type: none;
-
   padding: 1rem 20px;
 }
 
 nav ul li {
   display: inline;
-
   margin-left: 20px;
 }
 
 nav ul li a {
   text-decoration: none;
-
   color: #333;
-
   font-weight: bold;
-
   transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-  color: #000;
-}
-
-main {
-  display: flex;
-
-  justify-content: center;
-
-  align-items: center;
-
-  height: 100vh;
-
-  background-size: cover;
-
-  position: relative;
-
-  overflow: hidden;
-}
-
-main::after {
-  content: "";
-
-  position: absolute;
-
-  top: 0;
-
-  left: 0;
-
-  right: 0;
-
-  bottom: 0;
-
-  background: rgba(0, 0, 0, 0.5);
 }
 
 .banner-content {
   position: relative;
-
   text-align: center;
-
   color: white;
-
   z-index: 10;
 }
 
-.baner-content h1 {
-  font-size: 3rem;
-
-  margin-bottom: 1rem;
-}
-
-.banner-content p {
-  font-size: 1.5rem;
-
-  margin-bottom: 2rem;
+.inner-banner {
+  position:absolute;
+  width: 75%;
+  height: 75%;
+  background-image: url("/cropped-development-ethics\ \(1\).png");
+  background-position: center;
+  background-size: cover;
+  z-index: 10;
 }
 
 .buttons {
-  display: inline-block;
+  margin-top: -10%;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn {
   text-decoration: none;
-
   color: white;
-
   padding: 0.8rem 2rem;
-
-  border-radius: 5px;
-
+  border-radius: 30px;
   transition: background-color 0.3s ease;
+  top: 0;
+}
 
-  margin: 0 10px;
+.btn:last-child {
+  margin-left: 10px;
 }
 
 .primary {
@@ -139,46 +110,25 @@ main::after {
   opacity: 0.9;
 }
 
-main {
+.main-banner {
   background-image: url("/cropped-development-ethics\ \(1\).png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 125vh;
+  background-size: cover;
 }
 
 .nav-links li {
   position: relative;
 }
 
-.sub-menu {
-  display: none;
-
-  position: absolute;
-
-  left: 0;
-
-  background-color: white;
-
-  border-radius: 5px;
-
-  padding: 10px;
-
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-
-  z-index: 100;
-}
-
 .sub-menu a {
   display: block;
-
   color: black;
-
   padding: 10px;
-
   text-decoration: none;
-
   white-space: nowrap;
-}
-
-.sub-menu a:hover {
-  background-color: #444;
 }
 
 .nav-links li:hover .sub-menu {
@@ -187,8 +137,41 @@ main {
 
 nav ul li a {
   display: inline-block;
-
   padding: 10px 15px;
+}
+
+.info-box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.info-table {
+  background-color: lightgrey;
+  box-shadow: -1px 14px 14px 0px rgba(0,0,0,0.5);
+  width: 80%;
+  table-layout: fixed;
+}
+
+.info-content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  text-align: center;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info-content i, h2, p {
+  margin-bottom: 25px;
+}
+
+.td {
+  text-align:center;
+  background-color: white;
 }
 
 .info1-box {
@@ -199,4 +182,30 @@ nav ul li a {
   font-family: "Arial", sans-serif;
 
   font-style: italic;
+}
+
+.blurb-container {
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.blurb {
+  box-shadow: 0px 0px 24px -4px rgba(0,0,0,0.5);
+  margin-bottom: 30px;
+  width: 40%;
+  padding: 5%;
+}
+
+.blurb h1 {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+}
+
+.blurb h2 {
+  font-size: 2rem;
+  font-weight: lighter;
 }
