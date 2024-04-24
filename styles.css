@@ -71,7 +71,7 @@ nav ul li a {
   position:absolute;
   width: 75%;
   height: 75%;
-  background-image: url("/cropped-development-ethics\ \(1\).png");
+  background-image: url("./assets/banner.png");
   background-position: center;
   background-size: cover;
   z-index: 10;
@@ -96,6 +96,7 @@ nav ul li a {
 
 .btn:last-child {
   margin-left: 10px;
+  border: white 2px solid;
 }
 
 .primary {
@@ -111,7 +112,7 @@ nav ul li a {
 }
 
 .main-banner {
-  background-image: url("/cropped-development-ethics\ \(1\).png");
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5)), url("./assets/banner.png") no-repeat center;
   display: flex;
   justify-content: center;
   align-items: center;
