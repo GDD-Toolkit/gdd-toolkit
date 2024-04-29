@@ -28,7 +28,7 @@ header {
     background-attachment: scroll;
     background-repeat: no-repeat;
     text-align: right;
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     z-index: 1000;
   }
@@ -139,4 +139,63 @@ header {
     line-height: 1.26;
     text-align: center;
   }
+
+  /*Body*/
+  .body {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    margin-left: 110px;
+    margin-right: 110px;
+    align-items: center;
+    font-family: 'open sans';
+  }
+  
+  @media screen and (max-width: 800px) {
+    .body {
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+  }
+  
+  @media screen and (max-width: 1019px) {
+    .body {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  }
+  
+  @media screen and (max-width: 752px) {
+    .body {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+  }
+
+  .simulation {
+    margin-bottom: 40px;
+  }
+
+  .simulation h1, .principles h1 {
+    font-size: 54px;
+    font-family: 'light open sans';
+    text-decoration: underline;
+    font-weight: 200;
+  }
+
+  .simulation p, .principles p {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #46707F;
+    line-height: 1.6;
+  }
+
+  .simulation a {
+    display: block;
+    text-align: center;
+    color: #03a9f4;
+    text-decoration: none;
+}
+
+
+  
   
