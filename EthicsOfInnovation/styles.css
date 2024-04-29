@@ -196,6 +196,32 @@ header {
     text-decoration: none;
 }
 
+.designImages {
+    overflow: auto;
+    display: grid;
+    grid-template-columns: 265px 265px 265px;
+    grid-template-rows: 262px 262px 262px;
+    row-gap: 0px;
+    column-gap: 70px;
+    place-content: center;
+    margin-top: 70px;
+}
+
+.grid-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+.grid-img a {
+    display: flex;
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+
 
   
   
