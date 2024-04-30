@@ -1,0 +1,122 @@
+body,
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header {
+  background-image: url("backgroundimg.webp");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 50px;
+}
+
+.header-image {
+  width: 100%;
+  height: auto;
+  max-width: 500%;
+}
+
+.tool-intro h1 {
+  color: #004c3f;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+.tool-intro p {
+  margin-bottom: 1em;
+}
+
+.evaluation-category {
+  display: flex;
+  align-items: flex-start;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.category-icon {
+  width: 175px;
+  height: 100px;
+  margin-right: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.category-content {
+  flex-grow: 1;
+}
+
+.category-icon {
+  width: 175px;
+  height: 100;
+}
+
+.evaluation-category h3 {
+  margin: 0 0 1rem 0;
+  color: #333;
+}
+
+.evaluation-category p {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5em 0;
+  margin-top: -0.5em;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+}
+
+.navigation li:hover .sub-menu {
+  display: block;
+}
+
+.navigation li {
+  position: relative;
+}
+
+.sub-menu a {
+  display: block;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+
+.footer {
+  position: left;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
